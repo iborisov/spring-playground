@@ -14,10 +14,26 @@ public class User {
         this.password = password;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
     public static class Mapper implements RowMapper<User> {
         @Override
-        public User mapRow(ResultSet resultSet, int i) throws SQLException {
-            return null;
+        public User mapRow(ResultSet rs, int i) throws SQLException {
+            return new User(rs.getString("username"), rs.getString("password"));
         }
     }
 }
