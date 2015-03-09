@@ -29,11 +29,4 @@ public class User {
     public String getPassword() {
         return password;
     }
-
-    public static class Mapper implements RowMapper<User> {
-        @Override
-        public User mapRow(ResultSet rs, int i) throws SQLException {
-            return new User(rs.getString("username"), rs.getString("password"));
-        }
-    }
 }

@@ -22,7 +22,7 @@ import ru.demis.springplalyground.domain.User;
 @TestExecutionListeners({DependencyInjectionTestExecutionListener.class,
         DbUnitTestExecutionListener.class,
         TransactionalTestExecutionListener.class,
-        TransactionDbUnitTestExecutionListener.class,
+        TransactionDbUnitTestExecutionListener.class
 })
 public class UsersDaoTest {
     @Autowired
