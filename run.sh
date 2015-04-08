@@ -1,16 +1,28 @@
 #!/bin/sh
 
+JMX_PORT=10999
+JMX_RMI_PORT=11999
+
+# You can connect to JMX through SSH tunnelling:"
+# 1) Setup SSH-tunnels for both ports:"
+# ssh -N -v -L $JXM_RMI_PORT:localhost:$JXM_RMI_PORT -L $JMX_PORT:localhost:$JMX_PORT <YOUR_HOST>
+# 2) Connect to JMX server with, e.g., JConsole:
+# jconsole service:jmx:rmi://localhost:$JXM_RMI_PORT/jndi/rmi://localhost:$JMX_PORT/jmxrmi
+
 JVM_ARGUMENTS="\
--server
+-server \
+-Djava.net.preferIPv4Stack=true \
 -XX:PermSize=64m \
 -XX:MaxPermSize=128m \
--Xms256m \
--Xmx1989m \
+-Xms128m \
+-Xmx512m \
 -XX:+UseConcMarkSweepGC \
 -XX:+CMSClassUnloadingEnabled \
+-Djava.rmi.server.hostname=localhost \
 -Dcom.sun.management.jmxremote \
--Dcom.sun.management.jmxremote.port=9876 \
--Dcom.sun.management.jmxremote.local.only=false \
+-Dcom.sun.management.jmxremote.port=$JMX_PORT \
+-Dcom.sun.management.jmxremote.rmi.port=$JMX_RMI_PORT \
+-Dcom.sun.management.jmxremote.local.only=true \
 -Dcom.sun.management.jmxremote.authenticate=false \
 -Dcom.sun.management.jmxremote.ssl=false"
 
@@ -20,13 +32,14 @@ join() {
     local oldIFS=$IFS   # save IFS, the field separator
     IFS=$delim
     local result="$*"
-    IFS=$oldIFS   # restore IFS
+    IFS=$oldIFS         # restore IFS
     echo $result
 }
 
+# Spring Boot Maven plugin needs comma separated list of arguments for its run.arguments property.
 ARGS=$(join , ${@})
-echo $ARGS
 
 COMMAND="mvn -Dmaven.test.skip clean spring-boot:run -Drun.jvmArguments=\""${JVM_ARGUMENTS}"\" -Drun.arguments=\""${ARGS}"\""
 
+echo "Run command: " $COMMAND
 eval $COMMAND
