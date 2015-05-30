@@ -1,6 +1,6 @@
 #!/bin/sh
 
-COMMAND="mvn -Dspring.profile=test clean verify"
+COMMAND="mvn -Dspring.profiles.active=test clean verify"
 
 echo "Run command: " $COMMAND
 eval $COMMAND
