@@ -11,7 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 import ru.demis.springplalyground.domain.User;
 import ru.demis.springplalyground.repositories.UsersDao;
 
-import javax.annotation.PostConstruct;
 import java.util.HashSet;
 import java.util.Set;
 

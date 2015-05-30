@@ -24,7 +24,7 @@ import ru.demis.springplalyground.domain.User;
         TransactionalTestExecutionListener.class,
         TransactionDbUnitTestExecutionListener.class
 })
-public class UsersDaoTest {
+public class UsersDaoIT {
     @Autowired
     private UsersDao usersDao;
 

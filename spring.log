@@ -1,0 +1,545 @@
+2015-05-30 11:45:19.632  INFO 16117 --- [main] ru.demis.springplalyground.Application   : Starting Application on vlap with PID 16117 (/home/ivan/repos/spring-playground/target/classes started by ivan in /home/ivan/repos/spring-playground)
+2015-05-30 11:45:19.998  INFO 16117 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55e15664: startup date [Sat May 30 11:45:19 MSK 2015]; root of context hierarchy
+2015-05-30 11:45:21.798  INFO 16117 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-05-30 11:45:21.858  INFO 16117 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementSecurityAutoConfiguration.class]]
+2015-05-30 11:45:22.861  INFO 16117 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$734f534e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:45:22.891  INFO 16117 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:45:22.903  INFO 16117 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:45:22.908  INFO 16117 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:45:23.463  INFO 16117 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-05-30 11:45:23.969  INFO 16117 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-05-30 11:45:23.971  INFO 16117 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.20
+2015-05-30 11:45:24.114  INFO 16117 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-05-30 11:45:24.114  INFO 16117 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4119 ms
+2015-05-30 11:45:26.720  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/shutdown],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.ShutdownMvcEndpoint.invoke()
+2015-05-30 11:45:26.721  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:45:26.723  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2015-05-30 11:45:26.723  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:45:26.724  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:45:26.724  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:45:26.725  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:45:26.726  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:45:26.727  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2015-05-30 11:45:26.727  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:45:26.728  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:45:26.729  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:45:26.730  INFO 16117 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2015-05-30 11:45:27.192  INFO 16117 --- [localhost-startStop-1] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 8c530edc-06c1-4e8b-80fe-ab7339e41848
+
+2015-05-30 11:45:27.374  INFO 16117 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2015-05-30 11:45:27.374  INFO 16117 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2015-05-30 11:45:27.374  INFO 16117 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2015-05-30 11:45:27.374  INFO 16117 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2015-05-30 11:45:27.374  INFO 16117 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2015-05-30 11:45:27.499  INFO 16117 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/info'], Ant [pattern='/info/**'], Ant [pattern='/info.*'], Ant [pattern='/health'], Ant [pattern='/health/**'], Ant [pattern='/health.*'], Ant [pattern='/trace'], Ant [pattern='/trace/**'], Ant [pattern='/trace.*'], Ant [pattern='/shutdown'], Ant [pattern='/shutdown/**'], Ant [pattern='/shutdown.*'], Ant [pattern='/metrics'], Ant [pattern='/metrics/**'], Ant [pattern='/metrics.*'], Ant [pattern='/autoconfig'], Ant [pattern='/autoconfig/**'], Ant [pattern='/autoconfig.*'], Ant [pattern='/beans'], Ant [pattern='/beans/**'], Ant [pattern='/beans.*'], Ant [pattern='/dump'], Ant [pattern='/dump/**'], Ant [pattern='/dump.*'], Ant [pattern='/configprops'], Ant [pattern='/configprops/**'], Ant [pattern='/configprops.*'], Ant [pattern='/mappings'], Ant [pattern='/mappings/**'], Ant [pattern='/mappings.*'], Ant [pattern='/env'], Ant [pattern='/env/**'], Ant [pattern='/env.*']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f13af36, org.springframework.security.web.context.SecurityContextPersistenceFilter@75280b93, org.springframework.security.web.header.HeaderWriterFilter@a0d5a60, org.springframework.security.web.authentication.logout.LogoutFilter@1a0141a1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7c343190, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@499d49bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4bc7a51f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25542294, org.springframework.security.web.session.SessionManagementFilter@27b06d5b, org.springframework.security.web.access.ExceptionTranslationFilter@24dc7c05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bb6ae36]
+2015-05-30 11:45:27.511  INFO 16117 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61577071, org.springframework.security.web.context.SecurityContextPersistenceFilter@208cc3b7, org.springframework.security.web.header.HeaderWriterFilter@3e6cd583, org.springframework.security.web.authentication.logout.LogoutFilter@4b3a221c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@559582d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79853412, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@181dc812, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33973ca4, org.springframework.security.web.session.SessionManagementFilter@5b35ab79, org.springframework.security.web.access.ExceptionTranslationFilter@50d0d570, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@296fa767]
+2015-05-30 11:45:27.899  INFO 16117 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'metricFilter' to: [/*]
+2015-05-30 11:45:27.900  INFO 16117 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-05-30 11:45:27.900  INFO 16117 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2015-05-30 11:45:27.901  INFO 16117 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2015-05-30 11:45:27.901  INFO 16117 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-30 11:45:27.901  INFO 16117 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2015-05-30 11:45:27.901  INFO 16117 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-30 11:45:28.095  INFO 16117 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55e15664: startup date [Sat May 30 11:45:19 MSK 2015]; root of context hierarchy
+2015-05-30 11:45:28.234  INFO 16117 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ru.demis.springplalyground.Application$IndexController.index()
+2015-05-30 11:45:28.234  INFO 16117 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ru.demis.springplalyground.Application$IndexController.login()
+2015-05-30 11:45:28.236  INFO 16117 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-05-30 11:45:28.236  INFO 16117 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-05-30 11:45:28.276  INFO 16117 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-30 11:45:28.276  INFO 16117 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-30 11:45:28.334  INFO 16117 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-30 11:45:29.237  INFO 16117 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2015-05-30 11:45:30.275 ERROR 16117 --- [main] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+
+java.sql.SQLException: Unable to load class: org.postgresql.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc;ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:280)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:699)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:633)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:484)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:142)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at ru.demis.springplalyground.Application.main(Application.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: Unable to load class: org.postgresql.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc;ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:56)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:268)
+	... 31 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:274)
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:38)
+	... 32 common frames omitted
+
+2015-05-30 11:45:30.284  WARN 16117 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.DatabaseException: java.sql.SQLException: Unable to load class: org.postgresql.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc;ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at ru.demis.springplalyground.Application.main(Application.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: liquibase.exception.DatabaseException: java.sql.SQLException: Unable to load class: org.postgresql.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc;ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:319)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 20 common frames omitted
+Caused by: java.sql.SQLException: Unable to load class: org.postgresql.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc;ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:280)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:699)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:633)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:484)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:142)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:314)
+	... 22 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Unable to load class: org.postgresql.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc;ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:56)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:268)
+	... 31 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:274)
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:38)
+	... 32 common frames omitted
+
+2015-05-30 11:45:30.291  INFO 16117 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2015-05-30 11:45:30.349  INFO 16117 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2015-05-30 11:45:30.364  INFO 16117 --- [main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar, file:/usr/lib/jvm/java-7-openjdk/jre/lib/charsets.jar, file:/usr/lib/jvm/java-7-openjdk/jre/lib/jsse.jar, file:/usr/lib/jvm/java-7-openjdk/jre/lib/resources.jar, file:/usr/lib/jvm/java-7-openjdk/jre/lib/rhino.jar, file:/usr/lib/jvm/java-7-openjdk/jre/lib/management-agent.jar, file:/usr/lib/jvm/java-7-openjdk/jre/lib/jce.jar, file:/usr/lib/jvm/java-7-openjdk/jre/lib/ext/dnsns.jar, file:/usr/lib/jvm/java-7-openjdk/jre/lib/ext/localedata.jar, file:/usr/lib/jvm/java-7-openjdk/jre/lib/ext/zipfs.jar, file:/usr/lib/jvm/java-7-openjdk/jre/lib/ext/sunpkcs11.jar, file:/usr/lib/jvm/java-7-openjdk/jre/lib/ext/sunjce_provider.jar, file:/home/ivan/repos/spring-playground/target/classes/, file:/home/ivan/.m2/repository/com/h2database/h2/1.4.185/h2-1.4.185.jar, file:/home/ivan/.m2/repository/org/liquibase/liquibase-core/3.3.2/liquibase-core-3.3.2.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-starter-remote-shell/1.2.3.RELEASE/spring-boot-starter-remote-shell-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.3.RELEASE/spring-boot-starter-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot/1.2.3.RELEASE/spring-boot-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.3.RELEASE/spring-boot-autoconfigure-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.2.3.RELEASE/spring-boot-starter-logging-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.11/jcl-over-slf4j-1.7.11.jar, file:/home/ivan/.m2/repository/org/slf4j/jul-to-slf4j/1.7.11/jul-to-slf4j-1.7.11.jar, file:/home/ivan/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.11/log4j-over-slf4j-1.7.11.jar, file:/home/ivan/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar, file:/home/ivan/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar, file:/home/ivan/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/1.2.3.RELEASE/spring-boot-starter-actuator-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-actuator/1.2.3.RELEASE/spring-boot-actuator-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE.jar, file:/home/ivan/.m2/repository/org/crashub/crash.cli/1.3.1/crash.cli-1.3.1.jar, file:/home/ivan/.m2/repository/org/crashub/crash.connectors.ssh/1.3.1/crash.connectors.ssh-1.3.1.jar, file:/home/ivan/.m2/repository/org/apache/sshd/sshd-core/0.11.0/sshd-core-0.11.0.jar, file:/home/ivan/.m2/repository/org/apache/sshd/sshd-pam/0.11.0/sshd-pam-0.11.0.jar, file:/home/ivan/.m2/repository/net/sf/jpam/jpam/1.1/jpam-1.1.jar, file:/home/ivan/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.51/bcprov-jdk15on-1.51.jar, file:/home/ivan/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.51/bcpkix-jdk15on-1.51.jar, file:/home/ivan/.m2/repository/org/apache/mina/mina-core/2.0.7/mina-core-2.0.7.jar, file:/home/ivan/.m2/repository/org/slf4j/slf4j-api/1.7.11/slf4j-api-1.7.11.jar, file:/home/ivan/.m2/repository/org/crashub/crash.embed.spring/1.3.1/crash.embed.spring-1.3.1.jar, file:/home/ivan/.m2/repository/org/crashub/crash.plugins.cron/1.3.1/crash.plugins.cron-1.3.1.jar, file:/home/ivan/.m2/repository/it/sauronsoftware/cron4j/cron4j/2.2.5/cron4j-2.2.5.jar, file:/home/ivan/.m2/repository/org/crashub/crash.plugins.mail/1.3.1/crash.plugins.mail-1.3.1.jar, file:/home/ivan/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar, file:/home/ivan/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar, file:/home/ivan/.m2/repository/org/crashub/crash.shell/1.3.1/crash.shell-1.3.1.jar, file:/home/ivan/.m2/repository/org/codehaus/groovy/groovy/2.3.11/groovy-2.3.11.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.2.3.RELEASE/spring-boot-starter-web-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.2.3.RELEASE/spring-boot-starter-tomcat-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.20/tomcat-embed-core-8.0.20.jar, file:/home/ivan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.20/tomcat-embed-el-8.0.20.jar, file:/home/ivan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.20/tomcat-embed-logging-juli-8.0.20.jar, file:/home/ivan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.20/tomcat-embed-websocket-8.0.20.jar, file:/home/ivan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.5/jackson-databind-2.4.5.jar, file:/home/ivan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.5/jackson-annotations-2.4.5.jar, file:/home/ivan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.5/jackson-core-2.4.5.jar, file:/home/ivan/.m2/repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar, file:/home/ivan/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/home/ivan/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar, file:/home/ivan/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar, file:/home/ivan/.m2/repository/org/springframework/spring-web/4.1.6.RELEASE/spring-web-4.1.6.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/spring-webmvc/4.1.6.RELEASE/spring-webmvc-4.1.6.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-starter-freemarker/1.2.3.RELEASE/spring-boot-starter-freemarker-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/freemarker/freemarker/2.3.22/freemarker-2.3.22.jar, file:/home/ivan/.m2/repository/org/springframework/spring-context-support/4.1.6.RELEASE/spring-context-support-4.1.6.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-starter-security/1.2.3.RELEASE/spring-boot-starter-security-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/spring-beans/4.1.6.RELEASE/spring-beans-4.1.6.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/spring-expression/4.1.6.RELEASE/spring-expression-4.1.6.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/security/spring-security-config/3.2.7.RELEASE/spring-security-config-3.2.7.RELEASE.jar, file:/home/ivan/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/home/ivan/.m2/repository/org/springframework/security/spring-security-core/3.2.7.RELEASE/spring-security-core-3.2.7.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/security/spring-security-web/3.2.7.RELEASE/spring-security-web-3.2.7.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/spring-aop/4.1.6.RELEASE/spring-aop-4.1.6.RELEASE.jar, file:/home/ivan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.2.3.RELEASE/spring-boot-starter-jdbc-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/spring-jdbc/4.1.6.RELEASE/spring-jdbc-4.1.6.RELEASE.jar, file:/home/ivan/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.0.20/tomcat-jdbc-8.0.20.jar, file:/home/ivan/.m2/repository/org/apache/tomcat/tomcat-juli/8.0.20/tomcat-juli-8.0.20.jar, file:/home/ivan/.m2/repository/org/springframework/spring-tx/4.1.6.RELEASE/spring-tx-4.1.6.RELEASE.jar, file:/home/ivan/.m2/repository/org/springframework/boot/spring-boot-starter-test/1.2.3.RELEASE/spring-boot-starter-test-1.2.3.RELEASE.jar, file:/home/ivan/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar, file:/home/ivan/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar, file:/home/ivan/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, file:/home/ivan/.m2/repository/org/springframework/spring-test/4.1.6.RELEASE/spring-test-4.1.6.RELEASE.jar, file:/home/ivan/bin/idea-IU-141.177.4/lib/idea_rt.jar]
+2015-05-30 11:45:30.457  INFO 16117 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enabled debug logging (start with --debug)
+
+
+2015-05-30 11:45:30.459 ERROR 16117 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.DatabaseException: java.sql.SQLException: Unable to load class: org.postgresql.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc;ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at ru.demis.springplalyground.Application.main(Application.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: liquibase.exception.DatabaseException: java.sql.SQLException: Unable to load class: org.postgresql.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc;ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:319)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 20 common frames omitted
+Caused by: java.sql.SQLException: Unable to load class: org.postgresql.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc;ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:280)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:699)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:633)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:484)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:142)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:314)
+	... 22 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Unable to load class: org.postgresql.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc;ClassLoader:sun.misc.Launcher$AppClassLoader@68d767dc
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:56)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:268)
+	... 31 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:274)
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:38)
+	... 32 common frames omitted
+
+2015-05-30 11:46:42.419  INFO 16369 --- [main] ru.demis.springplalyground.Application   : Starting Application on vlap with PID 16369 (/home/ivan/repos/spring-playground/target/classes started by ivan in /home/ivan/repos/spring-playground)
+2015-05-30 11:46:42.925  INFO 16369 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@346da7b1: startup date [Sat May 30 11:46:42 MSK 2015]; root of context hierarchy
+2015-05-30 11:46:45.068  INFO 16369 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-05-30 11:46:45.123  INFO 16369 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementSecurityAutoConfiguration.class]]
+2015-05-30 11:46:46.153  INFO 16369 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$538c4420] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:46:46.181  INFO 16369 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:46:46.193  INFO 16369 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:46:46.198  INFO 16369 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:46:46.844  INFO 16369 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-05-30 11:46:47.346  INFO 16369 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-05-30 11:46:47.348  INFO 16369 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.20
+2015-05-30 11:46:47.507  INFO 16369 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-05-30 11:46:47.507  INFO 16369 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4587 ms
+2015-05-30 11:46:49.670  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:46:49.671  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:46:49.671  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:46:49.672  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/shutdown],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.ShutdownMvcEndpoint.invoke()
+2015-05-30 11:46:49.672  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:46:49.673  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2015-05-30 11:46:49.673  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:46:49.673  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:46:49.674  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:46:49.675  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2015-05-30 11:46:49.675  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:46:49.676  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2015-05-30 11:46:49.676  INFO 16369 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:46:50.098  INFO 16369 --- [localhost-startStop-1] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 593f2555-c1d6-477d-bab8-857d1e75b402
+
+2015-05-30 11:46:50.213  INFO 16369 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2015-05-30 11:46:50.213  INFO 16369 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2015-05-30 11:46:50.213  INFO 16369 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2015-05-30 11:46:50.213  INFO 16369 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2015-05-30 11:46:50.213  INFO 16369 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2015-05-30 11:46:50.289  INFO 16369 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/info'], Ant [pattern='/info/**'], Ant [pattern='/info.*'], Ant [pattern='/health'], Ant [pattern='/health/**'], Ant [pattern='/health.*'], Ant [pattern='/beans'], Ant [pattern='/beans/**'], Ant [pattern='/beans.*'], Ant [pattern='/autoconfig'], Ant [pattern='/autoconfig/**'], Ant [pattern='/autoconfig.*'], Ant [pattern='/shutdown'], Ant [pattern='/shutdown/**'], Ant [pattern='/shutdown.*'], Ant [pattern='/trace'], Ant [pattern='/trace/**'], Ant [pattern='/trace.*'], Ant [pattern='/dump'], Ant [pattern='/dump/**'], Ant [pattern='/dump.*'], Ant [pattern='/mappings'], Ant [pattern='/mappings/**'], Ant [pattern='/mappings.*'], Ant [pattern='/metrics'], Ant [pattern='/metrics/**'], Ant [pattern='/metrics.*'], Ant [pattern='/configprops'], Ant [pattern='/configprops/**'], Ant [pattern='/configprops.*'], Ant [pattern='/env'], Ant [pattern='/env/**'], Ant [pattern='/env.*']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e23b2da, org.springframework.security.web.context.SecurityContextPersistenceFilter@781d8448, org.springframework.security.web.header.HeaderWriterFilter@6dd7b3fd, org.springframework.security.web.authentication.logout.LogoutFilter@bf831db, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4a1ffb47, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67be90f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@250a58e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49b30d76, org.springframework.security.web.session.SessionManagementFilter@20428bd2, org.springframework.security.web.access.ExceptionTranslationFilter@d14dffd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79e834ce]
+2015-05-30 11:46:50.302  INFO 16369 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c0818cf, org.springframework.security.web.context.SecurityContextPersistenceFilter@358bcae5, org.springframework.security.web.header.HeaderWriterFilter@4bb6ae36, org.springframework.security.web.authentication.logout.LogoutFilter@61f98673, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@44ea1a45, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cb59bd9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70afb51, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5794cc69, org.springframework.security.web.session.SessionManagementFilter@4667820f, org.springframework.security.web.access.ExceptionTranslationFilter@b50676f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f7c17f2]
+2015-05-30 11:46:50.641  INFO 16369 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'metricFilter' to: [/*]
+2015-05-30 11:46:50.642  INFO 16369 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-05-30 11:46:50.642  INFO 16369 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2015-05-30 11:46:50.642  INFO 16369 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2015-05-30 11:46:50.642  INFO 16369 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-30 11:46:50.643  INFO 16369 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2015-05-30 11:46:50.643  INFO 16369 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-30 11:46:50.848  INFO 16369 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@346da7b1: startup date [Sat May 30 11:46:42 MSK 2015]; root of context hierarchy
+2015-05-30 11:46:50.953  INFO 16369 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ru.demis.springplalyground.Application$IndexController.index()
+2015-05-30 11:46:50.954  INFO 16369 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ru.demis.springplalyground.Application$IndexController.login()
+2015-05-30 11:46:50.957  INFO 16369 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-05-30 11:46:50.957  INFO 16369 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-05-30 11:46:51.034  INFO 16369 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-30 11:46:51.034  INFO 16369 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-30 11:46:51.114  INFO 16369 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-30 11:46:51.981  INFO 16369 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2015-05-30 11:46:53.091  INFO 16369 --- [main] liquibase                                : Successfully acquired change log lock
+2015-05-30 11:46:54.446  INFO 16369 --- [main] liquibase                                : Creating database history table with name: public.databasechangelog
+2015-05-30 11:46:54.457  INFO 16369 --- [main] liquibase                                : Reading from public.databasechangelog
+2015-05-30 11:46:54.487  INFO 16369 --- [main] liquibase                                : classpath:/db/changelog/db.changelog-master.xml: classpath:/db/changelog/db.changelog-1.xml::1::i.borisov: Table users created
+2015-05-30 11:46:54.488  INFO 16369 --- [main] liquibase                                : classpath:/db/changelog/db.changelog-master.xml: classpath:/db/changelog/db.changelog-1.xml::1::i.borisov: ChangeSet classpath:/db/changelog/db.changelog-1.xml::1::i.borisov ran successfully in 11ms
+2015-05-30 11:46:54.503  INFO 16369 --- [main] liquibase                                : Successfully released change log lock
+2015-05-30 11:46:54.511  INFO 16369 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-05-30 11:46:54.523  INFO 16369 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2015-05-30 11:46:54.722  INFO 16369 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2015-05-30 11:46:54.770  INFO 16369 --- [main] ru.demis.springplalyground.Application   : Started Application in 13.58 seconds (JVM running for 14.102)
+2015-05-30 11:47:54.634  INFO 16596 --- [main] o.a.maven.surefire.booter.ForkedBooter   : Starting ForkedBooter v2.18.1 on vlapwlan with PID 16596 (/home/ivan/.m2/repository/org/apache/maven/surefire/surefire-booter/2.18.1/surefire-booter-2.18.1.jar started by ivan in /home/ivan/repos/spring-playground)
+2015-05-30 11:47:54.948  INFO 16596 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@e1de817: startup date [Sat May 30 11:47:54 MSK 2015]; root of context hierarchy
+2015-05-30 11:47:57.219  INFO 16596 --- [main] roperties$SimpleAuthenticationProperties : 
+
+Using default password for shell access: 0f9a30eb-b40d-43a8-aeb7-5b7737f0da8d
+
+
+2015-05-30 11:47:57.961 ERROR 16596 --- [main] org.crsh.ssh.term.SSHLifeCycle           : Could not start CRaSSHD
+
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.AsynchronousServerSocketChannelImpl.bind(AsynchronousServerSocketChannelImpl.java:162)
+	at org.apache.sshd.common.io.nio2.Nio2Acceptor.bind(Nio2Acceptor.java:59)
+	at org.apache.sshd.SshServer.start(SshServer.java:349)
+	at org.crsh.ssh.term.SSHLifeCycle.init(SSHLifeCycle.java:185)
+	at org.crsh.ssh.SSHPlugin.init(SSHPlugin.java:194)
+	at org.crsh.plugin.PluginManager.getPlugins(PluginManager.java:83)
+	at org.crsh.plugin.PluginContext.start(PluginContext.java:327)
+	at org.crsh.plugin.PluginLifeCycle.start(PluginLifeCycle.java:104)
+	at org.springframework.boot.actuate.autoconfigure.CrshAutoConfiguration$CrshBootstrapBean.init(CrshAutoConfiguration.java:230)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:349)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:300)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:133)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1566)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:101)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2015-05-30 11:48:00.299  INFO 16596 --- [main] liquibase                                : Successfully acquired change log lock
+2015-05-30 11:48:01.604  INFO 16596 --- [main] liquibase                                : Reading from public.databasechangelog
+2015-05-30 11:48:01.618  INFO 16596 --- [main] liquibase                                : Successfully released change log lock
+2015-05-30 11:48:01.703  INFO 16596 --- [main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 7.744 seconds (JVM running for 8.61)
+2015-05-30 11:48:01.815 ERROR 16596 --- [main] org.dbunit.database.DatabaseDataSet      : Table 'test' not found in tableMap=org.dbunit.dataset.OrderedTableNameMap[_tableNames=[databasechangelog, databasechangeloglock, users], _tableMap={DATABASECHANGELOG=null, DATABASECHANGELOGLOCK=null, USERS=null}, _caseSensitiveTableNames=false]
+2015-05-30 11:48:01.819  WARN 16596 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [com.github.springtestdbunit.DbUnitTestExecutionListener@4b553d26] to process 'before' execution of test method [public void ru.demis.springplalyground.repositories.UsersDaoIT.test()] for test instance [ru.demis.springplalyground.repositories.UsersDaoIT@42f93a98]
+
+org.dbunit.dataset.NoSuchTableException: test
+	at org.dbunit.database.DatabaseDataSet.getTableMetaData(DatabaseDataSet.java:288)
+	at org.dbunit.operation.DeleteAllOperation.execute(DeleteAllOperation.java:109)
+	at org.dbunit.operation.CompositeOperation.execute(CompositeOperation.java:79)
+	at com.github.springtestdbunit.DbUnitRunner.setupOrTeardown(DbUnitRunner.java:194)
+	at com.github.springtestdbunit.DbUnitRunner.beforeTestMethod(DbUnitRunner.java:66)
+	at com.github.springtestdbunit.DbUnitTestExecutionListener.beforeTestMethod(DbUnitTestExecutionListener.java:186)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:249)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:72)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2015-05-30 11:48:01.855  INFO 16596 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@e1de817: startup date [Sat May 30 11:47:54 MSK 2015]; root of context hierarchy
+2015-05-30 11:50:47.088  INFO 17105 --- [main] ru.demis.springplalyground.Application   : Starting Application on vlapwlan with PID 17105 (/home/ivan/repos/spring-playground/target/classes started by ivan in /home/ivan/repos/spring-playground)
+2015-05-30 11:50:47.662  INFO 17105 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e6fdee: startup date [Sat May 30 11:50:47 MSK 2015]; root of context hierarchy
+2015-05-30 11:50:49.474  INFO 17105 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-05-30 11:50:49.573  INFO 17105 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementSecurityAutoConfiguration.class]]
+2015-05-30 11:50:50.938  INFO 17105 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$59eb4fe2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:50:50.981  INFO 17105 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:50:50.993  INFO 17105 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:50:51.005  INFO 17105 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-05-30 11:50:51.961  INFO 17105 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1337 (http)
+2015-05-30 11:50:52.550  INFO 17105 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-05-30 11:50:52.553  INFO 17105 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.20
+2015-05-30 11:50:52.776  INFO 17105 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-05-30 11:50:52.778  INFO 17105 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5121 ms
+2015-05-30 11:50:55.711  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:50:55.714  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:50:55.720  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2015-05-30 11:50:55.722  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:50:55.723  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:50:55.724  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:50:55.724  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/shutdown],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.ShutdownMvcEndpoint.invoke()
+2015-05-30 11:50:55.725  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:50:55.725  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:50:55.726  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:50:55.727  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2015-05-30 11:50:55.729  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2015-05-30 11:50:55.730  INFO 17105 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-05-30 11:50:56.238  INFO 17105 --- [localhost-startStop-1] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: d0cd23ab-a4c1-4ffb-a1e7-6f7f60d7b242
+
+2015-05-30 11:50:56.354  INFO 17105 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2015-05-30 11:50:56.354  INFO 17105 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2015-05-30 11:50:56.354  INFO 17105 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2015-05-30 11:50:56.355  INFO 17105 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2015-05-30 11:50:56.355  INFO 17105 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2015-05-30 11:50:56.418  INFO 17105 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/info'], Ant [pattern='/info/**'], Ant [pattern='/info.*'], Ant [pattern='/health'], Ant [pattern='/health/**'], Ant [pattern='/health.*'], Ant [pattern='/autoconfig'], Ant [pattern='/autoconfig/**'], Ant [pattern='/autoconfig.*'], Ant [pattern='/metrics'], Ant [pattern='/metrics/**'], Ant [pattern='/metrics.*'], Ant [pattern='/mappings'], Ant [pattern='/mappings/**'], Ant [pattern='/mappings.*'], Ant [pattern='/configprops'], Ant [pattern='/configprops/**'], Ant [pattern='/configprops.*'], Ant [pattern='/shutdown'], Ant [pattern='/shutdown/**'], Ant [pattern='/shutdown.*'], Ant [pattern='/beans'], Ant [pattern='/beans/**'], Ant [pattern='/beans.*'], Ant [pattern='/dump'], Ant [pattern='/dump/**'], Ant [pattern='/dump.*'], Ant [pattern='/trace'], Ant [pattern='/trace/**'], Ant [pattern='/trace.*'], Ant [pattern='/env'], Ant [pattern='/env/**'], Ant [pattern='/env.*']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b2549fb, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c3cf586, org.springframework.security.web.header.HeaderWriterFilter@1e852a2, org.springframework.security.web.authentication.logout.LogoutFilter@56070f0b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6dbb41bd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a7fd5c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7dbefd36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55a195ef, org.springframework.security.web.session.SessionManagementFilter@7eec4cf, org.springframework.security.web.access.ExceptionTranslationFilter@6321a821, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78884378]
+2015-05-30 11:50:56.429  INFO 17105 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69277959, org.springframework.security.web.context.SecurityContextPersistenceFilter@8c2114d, org.springframework.security.web.header.HeaderWriterFilter@2a322932, org.springframework.security.web.authentication.logout.LogoutFilter@55108983, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4dc0b215, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b93f29b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20532362, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c01e107, org.springframework.security.web.session.SessionManagementFilter@5d350073, org.springframework.security.web.access.ExceptionTranslationFilter@1941407e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21bf2761]
+2015-05-30 11:50:56.668  INFO 17105 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'metricFilter' to: [/*]
+2015-05-30 11:50:56.669  INFO 17105 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-05-30 11:50:56.670  INFO 17105 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2015-05-30 11:50:56.674  INFO 17105 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2015-05-30 11:50:56.674  INFO 17105 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-30 11:50:56.674  INFO 17105 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2015-05-30 11:50:56.675  INFO 17105 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-30 11:50:57.228  INFO 17105 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e6fdee: startup date [Sat May 30 11:50:47 MSK 2015]; root of context hierarchy
+2015-05-30 11:50:57.330  INFO 17105 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ru.demis.springplalyground.Application$IndexController.index()
+2015-05-30 11:50:57.332  INFO 17105 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ru.demis.springplalyground.Application$IndexController.login()
+2015-05-30 11:50:57.339  INFO 17105 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-05-30 11:50:57.340  INFO 17105 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-05-30 11:50:57.391  INFO 17105 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-30 11:50:57.391  INFO 17105 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-30 11:50:57.460  INFO 17105 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-30 11:50:58.781  INFO 17105 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2015-05-30 11:51:00.637  INFO 17105 --- [main] liquibase                                : Successfully acquired change log lock
+2015-05-30 11:51:01.835  INFO 17105 --- [main] liquibase                                : Reading from public.databasechangelog
+2015-05-30 11:51:01.846  INFO 17105 --- [main] liquibase                                : Successfully released change log lock
+2015-05-30 11:51:01.855  INFO 17105 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-05-30 11:51:01.881  INFO 17105 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2015-05-30 11:51:02.079  INFO 17105 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1337 (http)
+2015-05-30 11:51:02.158  INFO 17105 --- [main] ru.demis.springplalyground.Application   : Started Application in 16.171 seconds (JVM running for 17.415)
+2015-05-30 11:51:14.281  INFO 17105 --- [http-nio-1337-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-30 11:51:14.282  INFO 17105 --- [http-nio-1337-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-30 11:51:14.309  INFO 17105 --- [http-nio-1337-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2015-05-30 11:51:14.348  INFO 17105 --- [http-nio-1337-exec-1] o.s.b.a.audit.listener.AuditListener     : AuditEvent [timestamp=Sat May 30 11:51:14 MSK 2015, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]
+2015-05-30 11:51:18.318  INFO 17105 --- [http-nio-1337-exec-2] o.s.b.a.audit.listener.AuditListener     : AuditEvent [timestamp=Sat May 30 11:51:18 MSK 2015, principal=, type=AUTHENTICATION_FAILURE, data={type=org.springframework.security.authentication.BadCredentialsException, message=Bad credentials}]
+2015-05-30 11:51:34.764  INFO 17105 --- [Thread-2] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e6fdee: startup date [Sat May 30 11:50:47 MSK 2015]; root of context hierarchy
+2015-05-30 11:51:34.770  INFO 17105 --- [Thread-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2015-05-30 11:51:34.790  INFO 17105 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2015-05-30 11:51:58.854  INFO 17401 --- [main] o.a.maven.surefire.booter.ForkedBooter   : Starting ForkedBooter v2.18.1 on vlapwlan with PID 17401 (/home/ivan/.m2/repository/org/apache/maven/surefire/surefire-booter/2.18.1/surefire-booter-2.18.1.jar started by ivan in /home/ivan/repos/spring-playground)
+2015-05-30 11:51:59.135  INFO 17401 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@55f616cf: startup date [Sat May 30 11:51:59 MSK 2015]; root of context hierarchy
+2015-05-30 11:52:01.072  INFO 17401 --- [main] roperties$SimpleAuthenticationProperties : 
+
+Using default password for shell access: 943d5d3e-7454-47ce-98f3-3ffc5fc9013f
+
+
+2015-05-30 11:52:04.372  INFO 17401 --- [main] liquibase                                : Successfully acquired change log lock
+2015-05-30 11:52:05.658  INFO 17401 --- [main] liquibase                                : Reading from public.databasechangelog
+2015-05-30 11:52:05.669  INFO 17401 --- [main] liquibase                                : Successfully released change log lock
+2015-05-30 11:52:05.757  INFO 17401 --- [main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 7.521 seconds (JVM running for 8.319)
+2015-05-30 11:52:05.866 ERROR 17401 --- [main] org.dbunit.database.DatabaseDataSet      : Table 'test' not found in tableMap=org.dbunit.dataset.OrderedTableNameMap[_tableNames=[databasechangelog, databasechangeloglock, users], _tableMap={DATABASECHANGELOG=null, DATABASECHANGELOGLOCK=null, USERS=null}, _caseSensitiveTableNames=false]
+2015-05-30 11:52:05.876  WARN 17401 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [com.github.springtestdbunit.DbUnitTestExecutionListener@7a765367] to process 'before' execution of test method [public void ru.demis.springplalyground.repositories.UsersDaoIT.test()] for test instance [ru.demis.springplalyground.repositories.UsersDaoIT@2173f6d9]
+
+org.dbunit.dataset.NoSuchTableException: test
+	at org.dbunit.database.DatabaseDataSet.getTableMetaData(DatabaseDataSet.java:288)
+	at org.dbunit.operation.DeleteAllOperation.execute(DeleteAllOperation.java:109)
+	at org.dbunit.operation.CompositeOperation.execute(CompositeOperation.java:79)
+	at com.github.springtestdbunit.DbUnitRunner.setupOrTeardown(DbUnitRunner.java:194)
+	at com.github.springtestdbunit.DbUnitRunner.beforeTestMethod(DbUnitRunner.java:66)
+	at com.github.springtestdbunit.DbUnitTestExecutionListener.beforeTestMethod(DbUnitTestExecutionListener.java:186)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:249)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:72)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2015-05-30 11:52:05.893  INFO 17401 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@55f616cf: startup date [Sat May 30 11:51:59 MSK 2015]; root of context hierarchy
+2015-05-30 11:52:59.352  INFO 17570 --- [main] o.a.maven.surefire.booter.ForkedBooter   : Starting ForkedBooter v2.18.1 on vlapwlan with PID 17570 (/home/ivan/.m2/repository/org/apache/maven/surefire/surefire-booter/2.18.1/surefire-booter-2.18.1.jar started by ivan in /home/ivan/repos/spring-playground)
+2015-05-30 11:52:59.650  INFO 17570 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@55f616cf: startup date [Sat May 30 11:52:59 MSK 2015]; root of context hierarchy
+2015-05-30 11:53:01.669  INFO 17570 --- [main] roperties$SimpleAuthenticationProperties : 
+
+Using default password for shell access: 64c90654-2733-4d41-953c-d42d5c5c39a6
+
+
+2015-05-30 11:53:04.590  INFO 17570 --- [main] liquibase                                : Successfully acquired change log lock
+2015-05-30 11:53:05.721  INFO 17570 --- [main] liquibase                                : Reading from public.databasechangelog
+2015-05-30 11:53:05.730  INFO 17570 --- [main] liquibase                                : Successfully released change log lock
+2015-05-30 11:53:05.807  INFO 17570 --- [main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 7.028 seconds (JVM running for 7.769)
+2015-05-30 11:53:05.920  WARN 17570 --- [main] o.dbunit.dataset.AbstractTableMetaData   : Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'PostgreSQL' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products.
+2015-05-30 11:53:05.947  INFO 17570 --- [main] r.d.s.repositories.UsersDao              : Inserting user User{username='user2', password='p2'}
+2015-05-30 11:53:05.997  INFO 17570 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@55f616cf: startup date [Sat May 30 11:52:59 MSK 2015]; root of context hierarchy
+2015-05-30 11:53:56.486  INFO 17781 --- [main] o.a.maven.surefire.booter.ForkedBooter   : Starting ForkedBooter v2.18.1 on vlapwlan with PID 17781 (/home/ivan/.m2/repository/org/apache/maven/surefire/surefire-booter/2.18.1/surefire-booter-2.18.1.jar started by ivan in /home/ivan/repos/spring-playground)
+2015-05-30 11:53:56.773  INFO 17781 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@55f616cf: startup date [Sat May 30 11:53:56 MSK 2015]; root of context hierarchy
+2015-05-30 11:53:58.932  INFO 17781 --- [main] roperties$SimpleAuthenticationProperties : 
+
+Using default password for shell access: 5643777e-f135-4ecc-ab6e-a5028403ba29
+
+
+2015-05-30 11:54:02.063  INFO 17781 --- [main] liquibase                                : Successfully acquired change log lock
+2015-05-30 11:54:03.306  INFO 17781 --- [main] liquibase                                : Reading from public.databasechangelog
+2015-05-30 11:54:03.316  INFO 17781 --- [main] liquibase                                : Successfully released change log lock
+2015-05-30 11:54:03.416  INFO 17781 --- [main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 7.546 seconds (JVM running for 8.409)
+2015-05-30 11:54:03.542  WARN 17781 --- [main] o.dbunit.dataset.AbstractTableMetaData   : Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'PostgreSQL' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products.
+2015-05-30 11:54:03.565  INFO 17781 --- [main] r.d.s.repositories.UsersDao              : Inserting user User{username='user2', password='p2'}
+2015-05-30 11:54:03.608  INFO 17781 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@55f616cf: startup date [Sat May 30 11:53:56 MSK 2015]; root of context hierarchy

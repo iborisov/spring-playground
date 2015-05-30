@@ -1,4 +1,4 @@
 <dataset>
-    <test username="user1" password="p1" />
-    <test username="user2" password="p2" />
+    <users username="user1" password="p1" />
+    <users username="user2" password="p2" />
 </dataset>
