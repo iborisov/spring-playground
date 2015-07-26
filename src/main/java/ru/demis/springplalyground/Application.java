@@ -44,14 +44,5 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println(appConf.test);
-        System.out.println("test2:");
-        for (String s : test2) {
-            System.out.println(s);
-        }
-
-        for (User user : usersDao.getAll()) {
-            System.out.println(user);
-        }
     }
 }
