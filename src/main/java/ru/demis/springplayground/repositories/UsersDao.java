@@ -1,4 +1,4 @@
-package ru.demis.springplalyground.repositories;
+package ru.demis.springplayground.repositories;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,7 +7,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import ru.demis.springplalyground.domain.User;
+import ru.demis.springplayground.domain.User;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

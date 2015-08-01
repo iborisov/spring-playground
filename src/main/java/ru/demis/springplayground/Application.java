@@ -1,21 +1,27 @@
-package ru.demis.springplalyground;
+package ru.demis.springplayground;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationEvent;
+import org.springframework.context.ApplicationListener;
+import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import ru.demis.springplalyground.domain.User;
-import ru.demis.springplalyground.repositories.UsersDao;
+import ru.demis.springplayground.repositories.UsersDao;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner {
+    private static final Logger LOG = LoggerFactory.getLogger(Application.class);
+
     @Autowired
     AppConf appConf;
 
@@ -26,7 +32,8 @@ public class Application implements CommandLineRunner {
     public final Set<String> test2 = new HashSet<>();
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication application = new SpringApplication(Application.class);
+        application.run(args);
     }
 
     @Controller
@@ -44,5 +51,8 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        System.out.println("========================");
+        System.out.println(test2);
+        System.out.println("========================");
     }
 }

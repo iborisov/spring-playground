@@ -1,4 +1,4 @@
-package ru.demis.springplalyground;
+package ru.demis.springplayground;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

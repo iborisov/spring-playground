@@ -1,9 +1,4 @@
-package ru.demis.springplalyground.domain;
-
-import org.springframework.jdbc.core.RowMapper;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
+package ru.demis.springplayground.domain;
 
 public class User {
     private final String username;

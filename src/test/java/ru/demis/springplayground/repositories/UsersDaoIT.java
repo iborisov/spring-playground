@@ -1,4 +1,4 @@
-package ru.demis.springplalyground.repositories;
+package ru.demis.springplayground.repositories;
 
 import com.github.springtestdbunit.DbUnitTestExecutionListener;
 import com.github.springtestdbunit.TransactionDbUnitTestExecutionListener;
@@ -16,8 +16,8 @@ import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
-import ru.demis.springplalyground.Application;
-import ru.demis.springplalyground.domain.User;
+import ru.demis.springplayground.Application;
+import ru.demis.springplayground.domain.User;
 
 @ActiveProfiles("test")
 @RunWith(SpringJUnit4ClassRunner.class)

@@ -125,7 +125,7 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <mainClass>ru.demis.springplalyground.Application</mainClass>
+                    <mainClass>ru.demis.springplayground.Application</mainClass>
                 </configuration>
                 <executions>
                     <execution>
