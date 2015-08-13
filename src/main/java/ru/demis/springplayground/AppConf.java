@@ -1,15 +1,27 @@
 package ru.demis.springplayground;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-@Component
-public class AppConf {
-    public final int test;
+import java.util.Map;
 
-    @Autowired
-    public AppConf(@Value("${test}") int test) {
-        this.test = test;
+@Component
+@ConfigurationProperties(prefix = "app")
+public class AppConf {
+    private Map<String, String> mapProperty;
+
+    public Map<String, String> getMapProperty() {
+        return mapProperty;
+    }
+
+    public void setMapProperty(Map<String, String> mapProperty) {
+        this.mapProperty = mapProperty;
+    }
+
+    @Override
+    public String toString() {
+        return "AppConf{" +
+                "mapProperty=" + mapProperty +
+                '}';
     }
 }

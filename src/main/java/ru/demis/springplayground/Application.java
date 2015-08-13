@@ -28,9 +28,6 @@ public class Application implements CommandLineRunner {
     @Autowired
     UsersDao usersDao;
 
-    @Value("#{'${test2}'.split(',')}")
-    public final Set<String> test2 = new HashSet<>();
-
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(Application.class);
         application.run(args);
@@ -52,7 +49,7 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("========================");
-        System.out.println(test2);
+        System.out.println(appConf);
         System.out.println("========================");
     }
 }
